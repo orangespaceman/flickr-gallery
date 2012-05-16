@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<!--[if lt IE 9]><html class="old-ie"><![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />     
+    <title>Flickr Gallery</title>
+    <meta name="description" content="" />
+    <link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Trykker">
+    <link rel="stylesheet" media="screen" href="_/css/screen.css">    
+    <!--[if gt IE 8]><!--><script>document.documentElement.className += "js";</script><!--<![endif]-->
+    <!--[if lt IE 9]><script src="https://raw.github.com/aFarkas/html5shiv/master/dist/html5shiv.js"></script><![endif]-->
+  </head>
+  <body>
+
+    <header>
+      <h1>Flickr Gallery</h1>
+    </header>
+
+    <aside>
+      <h2>About this site</h2>
+      <p>Lorem ipsum</p>
+    </aside>
+    
+    <article>
+      <section class="slidewrap">
+        <div class="slider" id="gallery">
+          <figure>
+            <img src="http://farm8.staticflickr.com/7224/7195264936_51432097ea_b.jpg" alt="">
+            <figcaption>
+              <strong>Title</strong>
+              <em>Description</em>
+              <span>(location)</span>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="http://farm6.staticflickr.com/5344/7195265090_a1e3b067fc_b.jpg" alt="">
+            <figcaption>
+              <strong>Title</strong>
+              <em>Description</em>
+              <span>(location)</span>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="http://farm8.staticflickr.com/7083/7195266640_08ab2cee96_b.jpg" alt="Dancing Shiva, India">
+            <figcaption>
+              <strong>Title</strong>
+              <em>Description</em>
+              <span>(location)</span>
+            </figcaption>
+          </figure>
+
+        </div>
+      </section>
+    </article>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+    <script src="./_/js/slider.js"></script>
+    <script src="./_/js/init.js"></script>
+
+    <!-- this script fixes a layout issue with iOS devices when rotated -->
+    <script src="https://raw.github.com/gist/901295/bf9a44b636a522e608bba11a91b8298acd081f50/ios-viewport-scaling-bug-fix.js"></script>
+
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-XXX-X']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
